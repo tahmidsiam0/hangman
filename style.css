@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(148, 223, 255);
+}
+
+.whole {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.785);
+  padding: 10px 55px 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin: 5px;
+}
+
+.canvas {
+  background-color: #035cc2;
+  height: 200px;
+  width: 400px;
+}
+
+button {
+  height: 50px;
+  width: 180px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: #e455ae;
+  cursor: pointer;
+  border: none;
+  margin: 15px 10px;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  font-size: 20px;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.576);
+  margin-bottom: 10px;
+}
+
+.bottomText {
+  margin: 30px 0 0 0;
+}
+
+button:hover {
+  background-color: #472be6cc;
+}
+
+.allButton {
+  height: 160px;
+}
+
+.alphabetClass {
+  height: 40px;
+  width: 40px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  margin: 4px;
+}
+
+.output,
+.alreadyGuessed,
+.guessLeft {
+  height: 20px;
+  color: #636b52;
+  font-size: 22px;
+}
+
+.alreadyGuessed span {
+  margin: 0 5px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 200;
+  font-style: italic;
+  margin: 5px 0 10px;
+  color: #e455ae;
+}
+
+.guessingWord {
+  background-color: antiquewhite;
+  height: 50px;
+  width: 420px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: left;
+  padding: 10px 15px;
+  align-items: center;
+}
+
+.guessingWord p {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.guessingWord ul {
+  display: flex;
+}
+
+.guessingWord ul li {
+  list-style: none;
+  color: black;
+  font-size: 25px;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 22px;
+  height: 30px;
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 575px) {
+  .guessingWord {
+    width: 390px;
+  }
+  .allButton {
+    height: 190px;
+  }
+
+  .guessingWord ul li {
+    width: 19px;
+  }
+  button {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .alphabetClass {
+    height: 33px;
+    width: 36px;
+  }
+
+  button {
+    width: 300px;
+  }
+  .canvas {
+    background-color: #035cc2;
+    height: 185px;
+    width: 320px;
+  }
+  .guessingWord {
+    width: 320px;
+  }
+
+  .guessingWord ul li {
+    width: 15px;
+  }
+
+  .guessingWord p {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .alphabetClass {
+    height: 26px;
+    width: 48px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .alphabetClass {
+    height: 24px;
+    width: 42px;
+  }
+  .guessingWord {
+    width: 250px;
+  }
+  .guessingWord p {
+    display: none;
+  }
+  .guessingWord ul li {
+    width: 13px;
+  }
+  .whole {
+    padding: 10px 10px 10px;
+  }
+  .canvas {
+    height: 175px;
+    width: 310px;
+  }
+}
